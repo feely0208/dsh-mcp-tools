@@ -1,6 +1,6 @@
 {
   "name": "@deepwhale-cn/dsh-mcp-tools",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "一个 MCP 网关：把深鲸的文档合并、文档比对、站点体检、发版检查四个本地工具，用标准的 MCP 工具暴露给 Claude / Cursor 等任意客户端。",
   "type": "module",
   "license": "MIT",
@@ -31,18 +31,6 @@
     "docx",
     "site-audit"
   ],
-  "peerDependencies": {
-    "@deepwhale-cn/dsh-doc-merge": "^0.1.0",
-    "@deepwhale-cn/dsh-doc-compare": "^0.1.0",
-    "@deepwhale-cn/dsh-site-audit": "^0.1.0",
-    "@deepwhale-cn/dsh-release-guard": "^0.1.0"
-  },
-  "peerDependenciesMeta": {
-    "@deepwhale-cn/dsh-doc-merge": { "optional": true },
-    "@deepwhale-cn/dsh-doc-compare": { "optional": true },
-    "@deepwhale-cn/dsh-site-audit": { "optional": true },
-    "@deepwhale-cn/dsh-release-guard": { "optional": true }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/feely0208/dsh-mcp-tools.git"
@@ -53,5 +41,11 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@deepwhale-cn/dsh-doc-merge": "^0.1.0",
+    "@deepwhale-cn/dsh-doc-compare": "^0.1.0",
+    "@deepwhale-cn/dsh-site-audit": "^0.1.0",
+    "@deepwhale-cn/dsh-release-guard": "^0.1.0"
   }
 }
